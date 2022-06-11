@@ -194,11 +194,11 @@ void read_wind()
 
   wind_count = EEPROM.read(address_wind);
   seconds = myTimer.readTimer();
-  Serial.println(seconds);
+  // Serial.println(seconds);
   if (seconds >= 1)
   {
     windSpeed = (wind_count * wind_constant) / seconds;
-    Serial.println(windSpeed);
+    // Serial.println(windSpeed);
   }
   else
   {
